@@ -1,0 +1,21 @@
+name: first_workflow 
+
+on:
+  push:
+    branches:
+    - main
+
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print a welcome msg 
+        run: echo "welcome"
+
+      - name: checkout repo 
+        uses: actions/Checkout@v7.0.1
+
+      - name:
+        run: ls -la 

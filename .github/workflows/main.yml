@@ -19,3 +19,12 @@ jobs:
 
       - name:
         run: ls -la 
+
+  second_job:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: print a msg 
+        run: ehco "this msg written by sherif 
+
+        

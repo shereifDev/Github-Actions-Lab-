@@ -25,6 +25,6 @@ jobs:
 
     steps:
       - name: print a msg 
-        run: ehco "this msg written by sherif" 
+        run: echo "this msg written by sherif" 
 
         

@@ -1,0 +1,24 @@
+#workflow name 
+name: test app 
+
+#Trigger 
+on: 
+  push:
+    branches:
+      - main
+      - "release/**"
+  pull_request:
+     branches:
+      - main
+      - "release/**"
+
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: checkout code 
+        uses: actions/checkout@v7.0.1
+        
+      - name: print string 
+        run: echo "testing started"

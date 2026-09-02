@@ -24,7 +24,7 @@ jobs:
         run: ls -la 
         
       - name: Make script executable
-        run: chmod +x test.sh
+        run: chmod +x ./src/test.sh
         
       - name: run test scirpt 
-        run: ./test.sh 
+        run: ./src/test.sh 

@@ -20,5 +20,11 @@ jobs:
       - name: checkout code 
         uses: actions/checkout@v7.0.1
         
-      - name: print string 
-        run: echo "testing started"
+      - name: install gcc compiler
+        uses: marketplace/install gcc@v2
+
+      - name: Make script executable
+        run: chmod +x test.sh
+        
+      - name: run test scirpt 
+        run: ./test.sh 

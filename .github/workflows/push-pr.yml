@@ -19,6 +19,9 @@ jobs:
     
       - name: checkout code 
         uses: actions/checkout@v7.0.1
+
+      - name: list dir
+        run: ls -la 
         
       - name: Make script executable
         run: chmod +x test.sh

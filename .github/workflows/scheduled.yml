@@ -1,0 +1,13 @@
+name: scheduled workflow 
+
+on: 
+  schedule:
+    - cron: "0 2 * * *"   #runs every day @ 2 UTC
+
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print msg 
+        run: echo "running the scheduled task !"

@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print_msg
+        run: echo "running the manual workflow..."

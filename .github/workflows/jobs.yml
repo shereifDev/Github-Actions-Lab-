@@ -6,22 +6,22 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "excute ${{github.job}}  # use env var hold the name of job 
+      - run: echo "excute ${{github.job}}"  # use env var hold the name of job 
 
   job_2:
     runs-on: ubuntu-latest
     needs: job_1
     steps:
-       - run: echo "excute ${{github.job}}
+       - run: echo "excute ${{github.job}}"
 
   job_3:
     runs-on: ubuntu-latest
     needs: job_1
     steps:
-       - run: echo "excute ${{github.job}}
+       - run: echo "excute ${{github.job}}"
 
   job_4:
     runs-on: ubuntu-latest
     needs: [job_2,job_3]
     steps:
-      - run: echo "excute ${{github.job}}
+      - run: echo "excute ${{github.job}}"
